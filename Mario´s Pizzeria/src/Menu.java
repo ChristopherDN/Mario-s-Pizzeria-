@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class Menu {
     private String menuOverskrift;
-    private String leadText;
+    private String brugerValg;
     private String[] pizzaMenu;
 
-    public Menu(String s, String menuOverskrift, String[] pizzaMenu) {
+    public Menu(String menuOverskrift,String brugerValg, String[] pizzaMenu) {
         this.menuOverskrift = menuOverskrift;
-        this.leadText = leadText;
+        this.brugerValg = brugerValg;
         this.pizzaMenu = pizzaMenu;
     }
     public Menu() { //tom konstrtuktør
@@ -25,7 +25,7 @@ public class Menu {
         boolean validChoice = false;
         int choice = -1;
         while (!validChoice) {
-            System.out.print(leadText);
+            System.out.print(brugerValg);
             if (scanner.hasNextInt()) {
                 choice = scanner.nextInt();
                 validChoice = true;

@@ -5,7 +5,7 @@ public class Menu {
     private String leadText;
     private String[] pizzaMenu;
 
-    public Menu(String menuOverskrift, String[] pizzaMenu) {
+    public Menu(String s, String menuOverskrift, String[] pizzaMenu) {
         this.menuOverskrift = menuOverskrift;
         this.leadText = leadText;
         this.pizzaMenu = pizzaMenu;

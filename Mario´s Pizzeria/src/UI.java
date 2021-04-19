@@ -1,4 +1,4 @@
-public class Ui {
+public class UI {
 
     void printPizzaMenu() {
     Menu menu = new Menu();

@@ -1,3 +1,4 @@
 public class Mario {
-    //Skal kunne se me
+    public void seOrdreListe() {
+    }
 }

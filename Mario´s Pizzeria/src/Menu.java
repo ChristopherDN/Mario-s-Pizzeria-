@@ -1,19 +1,22 @@
 import java.util.Scanner;
 
 public class Menu {
-    private String menuHeader;
+    private String menuOverskrift;
     private String leadText;
-    private String[] menuItems;
+    private String[] pizzaMenu;
 
-    public Menu(String menuHeader, String leadText, String[] menuItems) {
-        this.menuHeader = menuHeader;
+    public Menu(String menuOverskrift, String[] pizzaMenu) {
+        this.menuOverskrift = menuOverskrift;
         this.leadText = leadText;
-        this.menuItems = menuItems;
+        this.pizzaMenu = pizzaMenu;
+    }
+    public Menu() { //tom konstrtuktør
     }
 
-    public void printMenu() { String printString = menuHeader + "\n";
-        for (int i = 0; i < menuItems.length; i++)
-            printString += menuItems[i] + "\n";
+    public void printMenu() {
+        String printString = menuOverskrift + "\n";
+        for (int i = 0; i < pizzaMenu.length; i++)
+            printString += pizzaMenu[i] + "\n";
         System.out.println("\n" + printString);
     }
 
@@ -21,12 +24,15 @@ public class Menu {
         Scanner scanner = new Scanner(System.in);
         boolean validChoice = false;
         int choice = -1;
-        while (! validChoice) {
+        while (!validChoice) {
             System.out.print(leadText);
             if (scanner.hasNextInt()) {
                 choice = scanner.nextInt();
-                validChoice = true;       } else {
-                scanner.nextLine();       }
-        }     return choice;   }
+                validChoice = true;
+            } else {
+                scanner.nextLine();
+            }
+        }     return choice;
+    }
 }
 

@@ -7,10 +7,10 @@ public class Bruger {
     private ArrayList<Integer> ordreListe = new ArrayList<>();
 
     UI ui = new UI();
-    PizzaMenu pizzaMenuen= new PizzaMenu();
+    PizzaMenu pizzaMenuen = new PizzaMenu();
     Menu menuen = new Menu();
 
-    public void hentPizzaMenu(){
+    public void hentPizzaMenu() {
         pizzaMenuen.printPizzaMenu();
     }
 
@@ -26,13 +26,20 @@ public class Bruger {
                 ordreListe.add(brugerInput);
                 System.out.println(ordreListe);
 // TODO: 20/04/2021 metoden skal kunne tilføje flere pizzaer på en ordre. og evt filer  
-                // File file = new File("src/ordreliste.txt");
+
             }
         }
     }
-        public void seOrdreListeMario () {
-            for (int i = 0; i < ordreListe.size(); i++) {
-                ui.printOrdreListe(ordreListe.get(i).toString());
+
+    public void seOrdreListeMario() {
+        for (int i = 0; i < ordreListe.size(); i++) {
+            ui.printOrdreListe(ordreListe.get(i).toString());
+            File fileRead = new File("src/orderliste.txt");
+            Scanner fileReader = new Scanner(fileRead);
+            while (fileReader.hasNext()) {
+                System.out.println(fileReader.nextLine());
+                fileReader.close(); //god stil
             }
         }
     }
+}

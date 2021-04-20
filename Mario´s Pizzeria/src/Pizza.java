@@ -1,13 +1,13 @@
 public class Pizza {
   int nummer = 0;
   String navn = "vesuvio";
-  String ingredienser = "tomat";
+  String fyld = "tomat";
   int pris = 60;
 
   public Pizza(int nummer, String navn, String ingredienser, int pris) {
     this.nummer = nummer;
     this.navn = navn;
-    this.ingredienser = ingredienser;
+    this.fyld = ingredienser;
     this.pris = pris;
   }
 
@@ -20,7 +20,7 @@ public class Pizza {
   }
 
   public String getIngredienser() {
-    return ingredienser;
+    return fyld;
   }
 
   public int getPris() {
@@ -29,6 +29,6 @@ public class Pizza {
 
   @Override
   public String toString() {
-    return "Pizza: " + nummer + " " + navn  + "  " + pris+ " .-"+ "\n" + ingredienser +"\n";
+    return "Pizza: " + nummer + " " + navn  + "  " + pris+ " .-"+ "\n" + fyld +"\n";
   }
 }

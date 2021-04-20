@@ -6,7 +6,7 @@ public class UI {
   private final Scanner scan = new Scanner(System.in);
   private final LocalDateTime købstid = LocalDateTime.now();
 
-  void printMenu() {
+  void printPizzaMenu(PizzaMenu pizzaMenu) {
     Bruger bruger = new Bruger();
     
   }

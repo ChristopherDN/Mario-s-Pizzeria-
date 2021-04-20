@@ -8,11 +8,6 @@ public class UI {
 
   void printPizzaMenu(PizzaMenu pizzaMenu) {
     Bruger bruger = new Bruger();
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 1f0ed084724f1fa7bb9afdff61bdc302cc2e7f37
   }
 
   //Get string

@@ -31,43 +31,15 @@ public class PizzaMenu {
   public void printPizzaMenu() {
     for (int i = 0; i < pizzaMenu.size(); i++) {
       System.out.println(pizzaMenu.get(i));
-
     }
   }
+<<<<<<< HEAD
 
+=======
   void visMenu() {
     UI ui = new UI();
     Alfonso alfonso = new Alfonso();
     Mario mario = new Mario();
+>>>>>>> 5d0225d31d62123e813befae7aac6356ad71465b
 
-    String[] menuChoice = {"1. Se Pizza Menu",
-        "2. Opret ordre",
-        "3. Se ordre",
-        //"4. Slet ordre",
-        "9. Afslut"};
-    Menu menu = new Menu("MARIOS PIZZA:", "Vælg:", menuChoice);
-    menu.printMenu();
-    boolean isRunning;
-    isRunning = true;
-    while (isRunning) {
-      int userChoice = menu.readChoice();
-
-      switch (userChoice) {
-        case 1:
-          printPizzaMenu();
-          break;
-        case 2:
-          alfonso.opretOrdre();
-          break;
-        case 3:
-          mario.seOrdreListe();
-          break;
-        case 9:
-          isRunning = false;
-          break;
-        default:
-          System.out.println("\nFejl.\nDet indtastede er ugyldigt ");
-      }
-    }
-  }
 }

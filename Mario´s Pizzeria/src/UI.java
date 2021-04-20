@@ -32,6 +32,11 @@ public class UI {
 
     return nextNumber;
   }
+<<<<<<< HEAD
+  public String printOrdreListe(String s) {
+    getString(s);
+    return s;
+=======
   public String printOrdreListe(String message) {
     System.out.println(message);
     return message;
@@ -46,5 +51,12 @@ public class UI {
     System.out.println(message);
     return message;
 
+>>>>>>> 7891c1e90123e917f545c49639fc8a11d2a48021
   }
+
+  public String printPizzaer(String p) {
+    getString(p);
+    return p;
+  }
+
 }

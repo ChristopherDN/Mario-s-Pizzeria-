@@ -8,10 +8,6 @@ public class UI {
 
   void printPizzaMenu(PizzaMenu pizzaMenu) {
     Bruger bruger = new Bruger();
-<<<<<<< HEAD
-=======
-
->>>>>>> 2e87233c14884162f492d16e7d72fa76cb82d17f
   }
 
   //Get string
@@ -42,22 +38,16 @@ public class UI {
     getString(s);
     return s;
   }
-
-    public String printOrdreListe (String message){
-      System.out.println(message);
-      return message;
-    }
-
-    public String printIndtastOrdre (String message){
+  public String printIndtastOrdre (String message){
       System.out.println(message);
       return message;
 
 
-    public String printOrdreUgyldig (String message){
+    /*public String printOrdreUgyldig (String message){
       System.out.println(message);
       return message;
 
-    }
+    }*/
 
     /*public String printPizzaer (String p){
       getString(p);

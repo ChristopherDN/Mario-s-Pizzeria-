@@ -8,7 +8,11 @@ public class UI {
 
   void printPizzaMenu(PizzaMenu pizzaMenu) {
     Bruger bruger = new Bruger();
+<<<<<<< HEAD
+
+=======
     
+>>>>>>> 1f0ed084724f1fa7bb9afdff61bdc302cc2e7f37
   }
 
   //Get string
@@ -32,9 +36,26 @@ public class UI {
 
     return nextNumber;
   }
+<<<<<<< HEAD
   public String printOrdreListe(String s) {
     getString(s);
     return s;
+=======
+  public String printOrdreListe(String message) {
+    System.out.println(message);
+    return message;
+  }
+
+  public String printIndtastOrdre(String message){
+    System.out.println(message);
+    return message;
+  }
+
+  public String printOrdreUgyldig(String message){
+    System.out.println(message);
+    return message;
+
+>>>>>>> 7891c1e90123e917f545c49639fc8a11d2a48021
   }
 
   public String printPizzaer(String p) {

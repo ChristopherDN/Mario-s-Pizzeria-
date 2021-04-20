@@ -8,7 +8,7 @@ public class UI {
 
   void printMenu() {
     Bruger bruger = new Bruger();
-    Mario mario = new Mario();
+    
   }
 
   //Get string

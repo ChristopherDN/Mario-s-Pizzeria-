@@ -4,10 +4,10 @@ public class Pizza {
   String fyld = "tomat";
   int pris = 60;
 
-  public Pizza(int nummer, String navn, String ingredienser, int pris) {
+  public Pizza(int nummer, String navn, String fyld, int pris) {
     this.nummer = nummer;
     this.navn = navn;
-    this.fyld = ingredienser;
+    this.fyld = fyld;
     this.pris = pris;
   }
 
@@ -19,7 +19,7 @@ public class Pizza {
     return navn;
   }
 
-  public String getIngredienser() {
+  public String getFyld() {
     return fyld;
   }
 

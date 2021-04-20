@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class PizzaMenu {
-  public ArrayList<Pizza> pizzaMenu = new ArrayList();
+  protected ArrayList<Pizza> pizzaMenu = new ArrayList();
 
   public PizzaMenu() {
     pizzaMenu.add(new Pizza(1, "DELLA NONNA", "tomat, ost, semi-dry tomat, rucola og parmesanost", 80));
@@ -32,4 +32,8 @@ public class PizzaMenu {
     }
   }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1caee3585568b977ec248e842802c75fb132752d

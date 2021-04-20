@@ -17,14 +17,15 @@ public class Bruger {
         // Alfonso skal kunne indskrive en pizza og så skal systemet registrere hvilken
 
         Scanner input = new Scanner(System.in);
+        ui.printIndtastOrdre("Indtast ordrenummer: ");
         input.nextInt();
+        input.nextLine();
 
-        for (int i = 1; i < pizzaMenuen.pizzaMenu.size(); i++) {
-            Pizza pizzaer = pizzaMenuen.pizzaMenu.get(i);
-            if (input.equals(pizzaer)) {
-                input.nextInt();
-                ordreListe.add(pizzaer);
-            }
+        for (int i = 0; i < pizzaMenuen.pizzaMenu.size(); i++) {
+            pizzaMenuen.pizzaMenu.get(i);
+            if (input.equals(pizzaMenuen.pizzaMenu.get(i).getNummer()));
+                ordreListe.add();
+
         }
     }
 

@@ -8,7 +8,7 @@ public class UI {
 
   void printMenu() {
     Bruger bruger = new Bruger();
-    Mario mario = new Mario();
+
   }
 
   //Get string
@@ -32,8 +32,19 @@ public class UI {
 
     return nextNumber;
   }
-  public String printOrdreListe(String s) {
-    System.out.println(s);
-    return s;
+  public String printOrdreListe(String message) {
+    System.out.println(message);
+    return message;
+  }
+
+  public String printIndtastOrdre(String message){
+    System.out.println(message);
+    return message;
+  }
+
+  public String printOrdreUgyldig(String message){
+    System.out.println(message);
+    return message;
+
   }
 }

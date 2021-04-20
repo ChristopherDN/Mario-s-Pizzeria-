@@ -11,10 +11,8 @@ public class PizzaMenu {
   public void printPizzaMenu() {
     for (int i = 0; i < pizzaMenu.size(); i++) {
       System.out.println(pizzaMenu.get(i));
-
     }
   }
-
   void visMenu() {
     UI ui = new UI();
     Alfonso alfonso = new Alfonso();

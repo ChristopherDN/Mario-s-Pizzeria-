@@ -24,18 +24,6 @@ public class PizzaMenu {
     pizzaMenu.add(new Pizza(18, "HAWAII", "tomat, ost, italiensk skinke og ananas", 79));
     pizzaMenu.add(new Pizza(19, "QUATTRO STAGIONI", "tomat, ost, champignon, pepperoni, italiensk skinke og artiskok", 85));
     pizzaMenu.add(new Pizza(20, "SORRETO", "tomat, ost, italiensk skinke", 72));
-    pizzaMenu.add(new Pizza(21, "CALZONE", "indbagt pizza med tomat, ost og italiensk skinke", 75));
-    pizzaMenu.add(new Pizza(22, "MARINARA", "tomat, ost, rejer og tun", 80));
-    pizzaMenu.add(new Pizza(23, "CIAO CIAO", "tomat, ost, emmentaler og parmaskinke", 86));
-    pizzaMenu.add(new Pizza(24, "ITALIA", "tomat, ost, peperoni", 79));
-    pizzaMenu.add(new Pizza(25, "GORGONZOLa", "tomat, ost, gorgonzola", 75));
-    pizzaMenu.add(new Pizza(26, "SCALA", "tomat, ost, kødstrimler, champignon, løg og oliven", 85));
-    pizzaMenu.add(new Pizza(27, "OPERA", "tomat, ost, gorgonzola, parmaskinke og soltørrede tomater", 85));
-    pizzaMenu.add(new Pizza(28, "CANNES", "tomat, ost, pepperoni, italiensk skinke og gorgonzola", 89));
-    pizzaMenu.add(new Pizza(29, "MONTANARA", "tomat, ost, pepproni, bacon og champignon", 88));
-    pizzaMenu.add(new Pizza(30, "VESUVIO", "tomat, ost, italiensk skinke og pepperoni", 82));
-    pizzaMenu.add(new Pizza(31, "BIANCE", "pizza med ost, bacon, rosmarin og kartoffel", 82));
-
   }
 
   public void printPizzaMenu() {
@@ -44,10 +32,4 @@ public class PizzaMenu {
     }
   }
 
-  void visMenu() {
-    UI ui = new UI();
-    Bruger bruger = new Bruger();
-    Mario mario = new Mario();
-
-  }
 }

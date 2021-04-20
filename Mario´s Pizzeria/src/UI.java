@@ -27,4 +27,8 @@ public class UI {
 
     return nextNumber;
   }
+  public String printOrdreListe(String s) {
+    System.out.println(s);
+    return s;
+  }
 }

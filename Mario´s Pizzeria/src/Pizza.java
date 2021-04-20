@@ -1,9 +1,12 @@
 public class Pizza {
+
+  //----Attributter----
   int nummer = 0;
   String navn = "vesuvio";
   String ingredienser = "tomat";
   int pris = 60;
 
+  //----Konstruktør----
   public Pizza(int nummer, String navn, String ingredienser, int pris) {
     this.nummer = nummer;
     this.navn = navn;
@@ -11,6 +14,7 @@ public class Pizza {
     this.pris = pris;
   }
 
+  //----Gettere----
   public int getNummer() {
     return nummer;
   }
@@ -27,6 +31,8 @@ public class Pizza {
     return pris;
   }
 
+
+  //----toString----
   @Override
   public String toString() {
     return "Pizza: " + nummer + " " + navn  + "  " + pris+ " .-"+ "\n" + ingredienser +"\n";

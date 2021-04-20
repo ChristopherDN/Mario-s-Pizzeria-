@@ -21,12 +21,7 @@ public class Menu {
     //----Instantiering----
     PizzaMenu pizzaMenuen = new PizzaMenu();
 
-    String[] menuChoice = {"1. Se Pizza Menu",
-            "2. Opret ordre",
-            "3. Se ordre",
-            //"4. Slet ordre",
-            "9. Afslut"};
-    Menu menu = new Menu("MARIOS PIZZA:", "Vælg: ", menuChoice);
+
 
     //----Metoder----
     public void printMenu() {
@@ -55,7 +50,7 @@ public class Menu {
     public void visMenu() {
         UI ui = new UI();
         Bruger bruger = new Bruger();
-/*
+
         String[] menuChoice = {"1. Se Pizza Menu",
                 "2. Opret ordre",
                 "3. Se ordre",
@@ -63,7 +58,7 @@ public class Menu {
                 "9. Afslut"};
         Menu menu = new Menu("MARIOS PIZZA:", "Vælg: ", menuChoice);
 
- */
+
         menu.printMenu();
         boolean isRunning;
         isRunning = true;

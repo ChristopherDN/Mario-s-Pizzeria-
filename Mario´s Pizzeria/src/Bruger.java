@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Bruger {
     private String midlertidig;
@@ -15,11 +16,15 @@ public class Bruger {
     public void opretOrdreAlfonso() {
         // Alfonso skal kunne indskrive en pizza og så skal systemet registrere hvilken
 
-        int userChoice = 0;
+        Scanner input = new Scanner(System.in);
+        input.nextInt();
+
         for (int i = 1; i < pizzaMenuen.pizzaMenu.size(); i++) {
             Pizza pizzaer = pizzaMenuen.pizzaMenu.get(i);
-            if (pizzaer.equals(userChoice));
-            ordreListe.add(pizzaer);
+            if (input.equals(pizzaer)) {
+                input.nextInt();
+                ordreListe.add(pizzaer);
+            }
         }
     }
 

@@ -1,3 +1,4 @@
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Menu {
@@ -47,7 +48,7 @@ public class Menu {
         return choice;
     }
 
-    public void visMenu() {
+    public void visMenu() throws FileNotFoundException {
         UI ui = new UI();
         Bruger bruger = new Bruger();
 

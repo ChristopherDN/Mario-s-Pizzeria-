@@ -8,20 +8,25 @@ public class UI {
 
   void printPizzaMenu(PizzaMenu pizzaMenu) {
     Bruger bruger = new Bruger();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2e87233c14884162f492d16e7d72fa76cb82d17f
   }
 
   //Get string
-  public String getString(String besked) {
-    System.out.println(besked);
+  public String getString(String message) {
+    System.out.println(message);
     return scan.nextLine();
   }
 
   //Get int
-  public int getInt(String besked) {
-    System.out.println(besked);
+  public int getInt(String message) {
+    System.out.println(message);
     return intValidate();
   }
-// Int validering
+
+  // Int validering
   public int intValidate() {
     while (!scan.hasNextInt()) {
       getString("Fejl, indtast et tal: ");
@@ -31,19 +36,34 @@ public class UI {
 
     return nextNumber;
   }
-  public String printOrdreListe(String message) {
-    System.out.println(message);
-    return message;
+
+
+  public String printOrdreListe(String s) {
+    getString(s);
+    return s;
   }
 
-  public String printIndtastOrdre(String message){
-    System.out.println(message);
-    return message;
+    public String printOrdreListe (String message){
+      System.out.println(message);
+      return message;
+    }
+
+    public String printIndtastOrdre (String message){
+      System.out.println(message);
+      return message;
+
+
+    public String printOrdreUgyldig (String message){
+      System.out.println(message);
+      return message;
+
+    }
+
+    /*public String printPizzaer (String p){
+      getString(p);
+      return p;
+      */
+    }
+
   }
 
-  public String printOrdreUgyldig(String message){
-    System.out.println(message);
-    return message;
-
-  }
-}

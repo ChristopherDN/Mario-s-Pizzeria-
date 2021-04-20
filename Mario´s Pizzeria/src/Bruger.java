@@ -18,6 +18,7 @@ public class Bruger {
         // Alfonso skal kunne indskrive en pizza og så skal systemet registrere hvilken
 
         Scanner input = new Scanner(System.in);
+<<<<<<< HEAD
         ui.printIndtastOrdre("Indtast ordrenummer: ");
         int brugerInput = input.nextInt();
 
@@ -28,6 +29,14 @@ public class Bruger {
 // TODO: 20/04/2021 metoden skal kunne tilføje flere pizzaer på en ordre. og evt filer  
                 // File file = new File("src/ordreliste.txt");
             }
+=======
+        ui.printIndtastOrdre("Indtast ordrenavn: ");
+        input.nextInt();
+
+        for (int i = 0; i < pizzaMenuen.pizzaMenu.size(); i++) {
+            if (input.equals(pizzaMenuen.pizzaMenu.get(i).getNummer()));
+                ordreListe.add(pizzaMenuen.pizzaMenu.get(i));
+>>>>>>> 2e87233c14884162f492d16e7d72fa76cb82d17f
         }
     }
 

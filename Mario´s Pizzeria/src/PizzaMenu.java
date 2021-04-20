@@ -24,8 +24,6 @@ public class PizzaMenu {
     pizzaMenu.add(new Pizza(18, "HAWAII", "tomat, ost, italiensk skinke og ananas", 79));
     pizzaMenu.add(new Pizza(19, "QUATTRO STAGIONI", "tomat, ost, champignon, pepperoni, italiensk skinke og artiskok", 85));
     pizzaMenu.add(new Pizza(20, "SORRETO", "tomat, ost, italiensk skinke", 72));
-
-
   }
 
   public void printPizzaMenu() {
@@ -34,10 +32,4 @@ public class PizzaMenu {
     }
   }
 
-  void visMenu() {
-    UI ui = new UI();
-    Bruger bruger = new Bruger();
-    Mario mario = new Mario();
-
-  }
 }

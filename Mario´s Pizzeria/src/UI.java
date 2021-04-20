@@ -6,6 +6,11 @@ public class UI {
   private final Scanner scan = new Scanner(System.in);
   private final LocalDateTime købstid = LocalDateTime.now();
 
+  void printMenu() {
+    Bruger bruger = new Bruger();
+    Mario mario = new Mario();
+  }
+
   //Get string
   public String getString(String besked) {
     System.out.println(besked);

@@ -33,7 +33,13 @@ public class UI {
     return nextNumber;
   }
   public String printOrdreListe(String s) {
-    System.out.println(s);
+    getString(s);
     return s;
   }
+
+  public String printPizzaer(String p) {
+    getString(p);
+    return p;
+  }
+
 }

@@ -7,4 +7,9 @@ public class Main {
     menu.visMenu();
 
   }
+
+  public void run() {
+
+  }
+
 }

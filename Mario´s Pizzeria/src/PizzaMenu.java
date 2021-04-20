@@ -35,8 +35,6 @@ public class PizzaMenu {
     pizzaMenu.add(new Pizza(29, "MONTANARA", "tomat, ost, pepproni, bacon og champignon",88));
     pizzaMenu.add(new Pizza(30, "VESUVIO", "tomat, ost, italiensk skinke og pepperoni",82));
     pizzaMenu.add(new Pizza(31, "BIANCE", "pizza med ost, bacon, rosmarin og kartoffel",22));
-
-
   }
 
   public void printPizzaMenu() {

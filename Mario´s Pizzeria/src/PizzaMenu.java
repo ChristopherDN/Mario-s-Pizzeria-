@@ -32,8 +32,7 @@ public class PizzaMenu {
     }
   }
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 1caee3585568b977ec248e842802c75fb132752d
+
+
+

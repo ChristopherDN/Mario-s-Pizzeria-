@@ -6,9 +6,13 @@ public class UI {
   private final Scanner scan = new Scanner(System.in);
   private final LocalDateTime købstid = LocalDateTime.now();
 
-  void printMenu() {
+  void printPizzaMenu(PizzaMenu pizzaMenu) {
     Bruger bruger = new Bruger();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 1f0ed084724f1fa7bb9afdff61bdc302cc2e7f37
   }
 
   //Get string

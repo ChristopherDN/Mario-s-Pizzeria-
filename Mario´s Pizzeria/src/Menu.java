@@ -55,7 +55,7 @@ public class Menu {
         String[] menuChoice = {"1. Se Pizza Menu",
                 "2. Opret ordre",
                 "3. Se ordre",
-                //"4. Slet ordre",
+                "4. Upload ordreliste",
                 "9. Afslut"};
         Menu menu = new Menu("MARIOS PIZZA:", "Vælg: ", menuChoice);
 
@@ -76,6 +76,8 @@ public class Menu {
                 case 3:
                     bruger.seOrdreListeMario();
                     break;
+                case 4:
+                    bruger.uploadOrdreListe();
                 case 9:
                     isRunning = false;
                     break;

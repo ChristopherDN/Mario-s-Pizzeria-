@@ -1,10 +1,12 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Bruger {
+    private LocalDateTime localDateTime = LocalDateTime.now();
     private String midlertidig;
     private ArrayList<Integer> ordreListe = new ArrayList<>();
 
@@ -32,24 +34,26 @@ public class Bruger {
             }
         }
         while (brugerInput != 0);
-
-            }
-
+    }
 
             public void seOrdreListeMario () {
                 for (int i = 0; i < ordreListe.size(); i++) {
                     ui.printOrdreListe(ordreListe.get(i));
-  /*          File fileRead = new File("src/orderliste.txt");
-
-
-            Scanner fileReader = new Scanner(fileRead);
-            while (fileReader.hasNext()) {
-                System.out.println(fileReader.nextLine());
-
-               fileReader.close(); //god stil
-               */
-
-
                 }
             }
-        }
+            public void uploadOrdreListe()  {
+
+                File file = new File("Mario´s Pizzeria/src/Ordreliste.txt");
+                PrintStream fileWriter = null;
+                try {
+                    fileWriter = new PrintStream(file);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
+                for (int i = 0; i < ordreListe.size(); i++) {
+                    fileWriter.println("Bestilling nr: " + ordreListe.get(i).toString() + "\nDato og tid: " + localDateTime);
+                    fileWriter.println();
+                }
+
+  }
+}

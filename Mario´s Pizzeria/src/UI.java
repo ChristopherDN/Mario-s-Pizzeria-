@@ -1,10 +1,13 @@
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class UI {
 
   private final Scanner scan = new Scanner(System.in);
-  private final LocalDateTime købstid = LocalDateTime.now();
+  private LocalDateTime localDateTime = LocalDateTime.now();
+  private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
+
 
   void printPizzaMenu(PizzaMenu pizzaMenu) {
     Bruger bruger = new Bruger();
@@ -35,12 +38,13 @@ public class UI {
 
 
   public int printOrdreListe(int s) {
-    System.out.println(s);
+    System.out.print(s + ": ");
     return s;
   }
-  public String printIndtastOrdre (String message){
-      System.out.println(message);
-      return message;
+
+  public String printIndtastOrdre(String message) {
+    System.out.println(message);
+    return message;
 
 
     /*public String printOrdreUgyldig (String message){
@@ -53,11 +57,15 @@ public class UI {
       getString(p);
       return p;
       */
-    }
+  }
+
   public String ugyldigtPizzaNummer(String message) {
     getString(message);
     return message;
   }
 
-  }
+  public String visTidspunkt(String localDateTime) {
 
+  return localDateTime;
+  }
+}

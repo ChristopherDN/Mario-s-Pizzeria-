@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Menu {
 
     //----Attributter------
+    final UI ui = new UI();
     private String menuOverskrift;
     private String brugerValg;
     private String[] pizzaMenu;
@@ -37,7 +38,7 @@ public class Menu {
         boolean validChoice = false;
         int choice = -1;
         while (!validChoice) {
-            System.out.print(brugerValg);
+            ui.getInt(brugerValg);
             if (scanner.hasNextInt()) {
                 choice = scanner.nextInt();
                 validChoice = true;
@@ -49,7 +50,6 @@ public class Menu {
     }
 
     public void visMenu() throws FileNotFoundException {
-        UI ui = new UI();
         Bruger bruger = new Bruger();
 
         String[] menuChoice = {"1. Se Pizza Menu",
@@ -87,7 +87,7 @@ public class Menu {
                     isRunning = false;
                     break;
                 default:
-                    System.out.println("\nFejl.\nDet indtastede er ugyldigt ");
+                    ui.getInt("\nFejl.\nDet indtastede er ugyldigt ");
             }
             for (int i = 0; i < pizzaMenuen.getPizzaMenu().size(); i++) {
 

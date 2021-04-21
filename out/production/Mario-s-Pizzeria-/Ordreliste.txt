@@ -1,9 +1,9 @@
+Bestilling nr: 4
+Dato og tid: 2021-04-21T14:09:19
+
 Bestilling nr: 5
-Dato og tid: 2021-04-21T13:19:48.140072
+Dato og tid: 2021-04-21T14:09:19
 
-Bestilling nr: 7
-Dato og tid: 2021-04-21T13:19:48.140072
-
-Bestilling nr: 9
-Dato og tid: 2021-04-21T13:19:48.140072
+Bestilling nr: 6
+Dato og tid: 2021-04-21T14:09:19
 

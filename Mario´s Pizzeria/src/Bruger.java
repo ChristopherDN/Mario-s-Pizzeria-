@@ -28,33 +28,40 @@ public class Bruger {
             for (int i = 0; i < pizzaMenuen.getPizzaMenu().size(); i++) {
                 if (brugerInput == pizzaMenuen.getPizzaMenu().get(i).getNummer()) {
                     ordreListe.add(pizzaMenuen.getPizzaMenu().get(i).getNummer());
-            ui.printIndtastOrdre("Indtast nummer, afslut med 0: ");
-            brugerInput = input.nextInt();
-            input.nextLine();
+                    ui.printIndtastOrdre("Indtast nummer, afslut med 0: ");
+                    brugerInput = input.nextInt();
+                    input.nextLine();
                 }
             }
         }
         while (brugerInput != 0);
     }
 
-            public void seOrdreListeMario () {
-                for (int i = 0; i < ordreListe.size(); i++) {
-                    ui.printOrdreListe(ordreListe.get(i));
-                }
-            }
-            public void uploadOrdreListe()  {
+    public void seOrdreListeMario() {
+        for (int i = 0; i < ordreListe.size(); i++) {
+            ui.printOrdreListe(ordreListe.get(i));
+        }
+    }
 
-                File file = new File("Mario´s Pizzeria/src/Ordreliste.txt");
-                PrintStream fileWriter = null;
-                try {
-                    fileWriter = new PrintStream(file);
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                }
-                for (int i = 0; i < ordreListe.size(); i++) {
-                    fileWriter.println("Bestilling nr: " + ordreListe.get(i).toString() + "\nDato og tid: " + localDateTime);
-                    fileWriter.println();
-                }
+    public void uploadOrdreListe() {
+        File fileWrite = new File("Mario´s Pizzeria/src/Ordreliste.txt");
+        PrintStream fileWriter = null;
+        try {
+            fileWriter = new PrintStream(fileWrite);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        for (int i = 0; i < ordreListe.size(); i++) {
+            fileWriter.println("Bestilling nr: " + ordreListe.get(i).toString() + "\nDato og tid: " + localDateTime);
+            fileWriter.println();
+        }
+    }
 
-  }
+    public void downloadOrdreListe() throws FileNotFoundException {
+        File fileRead = new File("Mario´s Pizzeria/src/Ordreliste.txt");
+        Scanner fileReader = new Scanner(fileRead);
+        while (fileReader.hasNext()) {
+            System.out.println(fileReader.nextLine());
+        }
+    }
 }

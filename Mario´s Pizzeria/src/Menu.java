@@ -56,6 +56,7 @@ public class Menu {
                 "2. Opret ordre",
                 "3. Se ordre",
                 "4. Upload ordreliste",
+                "5. Download ordreliste",
                 "9. Afslut"};
         Menu menu = new Menu("MARIOS PIZZA:", "Vælg: ", menuChoice);
 
@@ -78,6 +79,10 @@ public class Menu {
                     break;
                 case 4:
                     bruger.uploadOrdreListe();
+                    break;
+                case 5:
+                    bruger.downloadOrdreListe();
+                    break;
                 case 9:
                     isRunning = false;
                     break;

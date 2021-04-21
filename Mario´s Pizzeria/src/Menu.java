@@ -84,9 +84,9 @@ public class Menu {
                 default:
                     System.out.println("\nFejl.\nDet indtastede er ugyldigt ");
             }
-            for (int i = 0; i < pizzaMenuen.pizzaMenu.size(); i++) {
+            for (int i = 0; i < pizzaMenuen.getPizzaMenu().size(); i++) {
 
-                if (pizzaMenuen.pizzaMenu.get(i).equals(userChoice)) ;
+                if (pizzaMenuen.getPizzaMenu().get(i).equals(userChoice)) ;
             }
         }
     }

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Bruger {
-    private LocalDateTime localDateTime = LocalDateTime.now();
+    private LocalDateTime localDateTime = LocalDateTime.now().withNano(0);
     private String midlertidig;
     private ArrayList<Integer> ordreListe = new ArrayList<>();
 
@@ -21,12 +21,13 @@ public class Bruger {
     public void opretOrdreAlfonso() {
         Scanner input = new Scanner(System.in);
         ui.printIndtastOrdre("Indtast ordrenummer, afslut med 0: ");
+
         int brugerInput = input.nextInt();
 
         do {
-            for (int i = 1; i < pizzaMenuen.pizzaMenu.size()+1; i++) {
-                if (brugerInput == (i)) {
-                    ordreListe.add(brugerInput);
+            for (int i = 0; i < pizzaMenuen.getPizzaMenu().size(); i++) {
+                if (brugerInput == pizzaMenuen.getPizzaMenu().get(i).getNummer()) {
+                    ordreListe.add(pizzaMenuen.getPizzaMenu().get(i).getNummer());
             ui.printIndtastOrdre("Indtast nummer, afslut med 0: ");
             brugerInput = input.nextInt();
             input.nextLine();

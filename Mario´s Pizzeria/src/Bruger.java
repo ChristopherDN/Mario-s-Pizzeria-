@@ -64,4 +64,14 @@ public class Bruger {
             System.out.println(fileReader.nextLine());
         }
     }
+
+    public void sletOrdre() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter number of order you want to delete: ");
+        int brugerName = input.nextInt();
+        for (int i = 0; i < ordreListe.size(); i++) {
+            if (ordreListe.get(i).equals(brugerName)) {
+                ordreListe.remove(i);
+            }
+        }
 }

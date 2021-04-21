@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class Menu {
 
     //----Attributter------
-    final UI ui = new UI();
     private String menuOverskrift;
     private String brugerValg;
     private String[] pizzaMenu;
+    final UI ui = new UI();
 
     //----Konstruktør----
     public Menu(String menuOverskrift, String brugerValg, String[] pizzaMenu) {
@@ -38,11 +38,12 @@ public class Menu {
         boolean validChoice = false;
         int choice = -1;
         while (!validChoice) {
-            ui.getInt(brugerValg);
+            System.out.print(brugerValg);
             if (scanner.hasNextInt()) {
                 choice = scanner.nextInt();
                 validChoice = true;
             } else {
+                ui.getInt("Fejl, indtast et tal fra menuen");
                 scanner.nextLine();
             }
         }
@@ -87,7 +88,7 @@ public class Menu {
                     isRunning = false;
                     break;
                 default:
-                    ui.getInt("\nFejl.\nDet indtastede er ugyldigt ");
+                    ui.getString("\nFejl.\nDet indtastede er ugyldigt ");
             }
             for (int i = 0; i < pizzaMenuen.getPizzaMenu().size(); i++) {
 

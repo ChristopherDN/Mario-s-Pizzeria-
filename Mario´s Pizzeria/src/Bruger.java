@@ -27,25 +27,24 @@ public class Bruger {
                     ordreListe.add(brugerInput);
                 }
 
-        for (int i = 0; i < pizzaMenuen.pizzaMenu.size(); i++) {
-            if (brugerInput == (i)) {
-                ordreListe.add(brugerInput);
-                System.out.println(ordreListe);
-// TODO: 20/04/2021 metoden skal kunne tilføje flere pizzaer på en ordre. og evt filer  
-                
+                    }
+                }
             }
-        }
-    }
 
-    public void seOrdreListeMario() {
-        for (int i = 0; i < ordreListe.size(); i++) {
-            ui.printOrdreListe(ordreListe.get(i).toString());
-            File fileRead = new File("src/orderliste.txt");
+            public void seOrdreListeMario () {
+                for (int i = 0; i < ordreListe.size(); i++) {
+                    ui.printOrdreListe(ordreListe.get(i).toString());
+  /*          File fileRead = new File("src/orderliste.txt");
+
+
             Scanner fileReader = new Scanner(fileRead);
             while (fileReader.hasNext()) {
                 System.out.println(fileReader.nextLine());
-                fileReader.close(); //god stil
+
+               fileReader.close(); //god stil
+               */
+
+
+                }
             }
         }
-    }
-}

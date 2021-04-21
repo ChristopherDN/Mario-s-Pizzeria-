@@ -34,8 +34,8 @@ public class UI {
   }
 
 
-  public String printOrdreListe(String s) {
-    getString(s);
+  public int printOrdreListe(int s) {
+    System.out.println(s);
     return s;
   }
   public String printIndtastOrdre (String message){
@@ -54,6 +54,10 @@ public class UI {
       return p;
       */
     }
+  public String ugyldigtPizzaNummer(String message) {
+    getString(message);
+    return message;
+  }
 
   }
 

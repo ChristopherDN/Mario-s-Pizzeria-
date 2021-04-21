@@ -18,22 +18,27 @@ public class Bruger {
 
     public void opretOrdreAlfonso() {
         Scanner input = new Scanner(System.in);
-        ui.printIndtastOrdre("Indtast ordrenummer: ");
+        ui.printIndtastOrdre("Indtast ordrenummer, afslut med 0: ");
         int brugerInput = input.nextInt();
 
-        while (input.nextInt() != 0) {
-            for (int i = 0; i < pizzaMenuen.pizzaMenu.size(); i++) {
+        do {
+            for (int i = 1; i < pizzaMenuen.pizzaMenu.size()+1; i++) {
                 if (brugerInput == (i)) {
                     ordreListe.add(brugerInput);
-                }
-
-                    }
+            ui.printIndtastOrdre("Indtast nummer, afslut med 0: ");
+            brugerInput = input.nextInt();
+            input.nextLine();
                 }
             }
+        }
+        while (brugerInput != 0);
+
+            }
+
 
             public void seOrdreListeMario () {
                 for (int i = 0; i < ordreListe.size(); i++) {
-                    ui.printOrdreListe(ordreListe.get(i).toString());
+                    ui.printOrdreListe(ordreListe.get(i));
   /*          File fileRead = new File("src/orderliste.txt");
 
 

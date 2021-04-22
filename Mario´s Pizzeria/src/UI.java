@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class UI {
 
   //----Attributter----
+  //---Lavet af Christopher------
   private final Scanner scan = new Scanner(System.in);
   private LocalDateTime localDateTime = LocalDateTime.now();
   private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");

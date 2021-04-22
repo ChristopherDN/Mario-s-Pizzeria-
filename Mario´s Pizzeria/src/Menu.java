@@ -4,12 +4,14 @@ import java.util.Scanner;
 public class Menu {
 
     //----Attributter------
+    //---Lavet af Christopher------
     private String menuOverskrift;
     private String brugerValg;
     private String[] pizzaMenu;
     final UI ui = new UI();
 
     //----Konstruktør----
+    //---Lavet af Christopher------
     public Menu(String menuOverskrift, String brugerValg, String[] pizzaMenu) {
         this.menuOverskrift = menuOverskrift;
         this.brugerValg = brugerValg;
@@ -26,7 +28,7 @@ public class Menu {
 
 
     //----Metoder----
-    //----Lavet af Anna----
+    //----Lavet af Anna-Christopher---
     public void printMenu() {
         String printString = menuOverskrift + "\n";
         for (int i = 0; i < pizzaMenu.length; i++)
@@ -34,7 +36,7 @@ public class Menu {
         System.out.println("\n" + printString);
     }
 
-    //----Lavet af Anna----
+    //----Lavet af Anna-Christopher---
     public int readChoice() {
         Scanner scanner = new Scanner(System.in);
         boolean validChoice = false;
@@ -52,7 +54,7 @@ public class Menu {
         return choice;
     }
 
-    //----Lavet af Anna----
+    //----Lavet af Anna-Christopher---
     public void visMenu() throws FileNotFoundException {
         Bruger bruger = new Bruger();
 

@@ -1,12 +1,12 @@
-Bestilling nr: 9
-Dato og tid: 21-04-2021 15:29
+Bestilling nr: 1
+ Pizza nummer: 4
+Dato og tid: 22-04-2021 11:43
 
-Bestilling nr: 5
-Dato og tid: 21-04-2021 15:29
+Bestilling nr: 2
+ Pizza nummer: 7
+Dato og tid: 22-04-2021 11:43
 
-Bestilling nr: 4
-Dato og tid: 21-04-2021 15:29
-
-Bestilling nr: 8
-Dato og tid: 21-04-2021 15:29
+Bestilling nr: 3
+ Pizza nummer: 9
+Dato og tid: 22-04-2021 11:43
 

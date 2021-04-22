@@ -1,23 +1,12 @@
-<<<<<<< HEAD
+Bestilling nr: 1
+Pizza nummer: 4
+Dato og tid: 22-04-2021 11:45
+
+Bestilling nr: 2
+Pizza nummer: 5
+Dato og tid: 22-04-2021 11:45
+
 Bestilling nr: 3
-Dato og tid: 22-04-2021 11:30
-
-Bestilling nr: 4
-Dato og tid: 22-04-2021 11:30
-
-Bestilling nr: 5
-Dato og tid: 22-04-2021 11:30
-=======
-Bestilling nr: 6
-Dato og tid: 22-04-2021 11:10
-
-Bestilling nr: 7
-Dato og tid: 22-04-2021 11:10
-
-Bestilling nr: 4
-Dato og tid: 22-04-2021 11:10
-
-Bestilling nr: 13
-Dato og tid: 22-04-2021 11:10
->>>>>>> 028631fe3617a3ef5839b76d6a1c709db84d7ea8
+Pizza nummer: 6
+Dato og tid: 22-04-2021 11:45
 

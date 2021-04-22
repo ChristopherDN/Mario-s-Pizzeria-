@@ -10,6 +10,7 @@ public class Bruger {
   private LocalDateTime localDateTime = LocalDateTime.now().withNano(0);
   private String midlertidig;
   private ArrayList<Integer> ordreListe = new ArrayList<>();
+  private int ordreNummer;
 
 
   UI ui = new UI();
@@ -20,7 +21,7 @@ public class Bruger {
     pizzaMenuen.printPizzaMenu();
   }
 
-  public void opretOrdreAlfonso()  {
+  public void opretOrdreAlfonso() {
     Scanner input = new Scanner(System.in);
     ui.printIndtastOrdre("Indtast ordrenummer, afslut med 0: ");
     int brugerInput = input.nextInt();
@@ -41,22 +42,21 @@ public class Bruger {
   DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
 
   public void seOrdreListeMario() {
-    for (int i = 0; i < ordreListe.size(); i++) {
 
-      System.out.println(ui.visTidspunkt(localDateTime.format(formatter)));
+    for (int i = 0; i < ordreListe.size(); i++) {
+      ordreNummer++;
+      System.out.println("\n" + ui.visTidspunkt(localDateTime.format(formatter)) + "\n" + "Bestilling nummer: " + ordreNummer);
+      System.out.print("Pizza nummer: ");
       ui.printOrdreListe(ordreListe.get(i));
 
       for (int j = 0; j < pizzaMenuen.getPizzaMenu().size(); j++) {
         if (ordreListe.get(i) == j + 1) {
-<<<<<<< HEAD
-          System.out.println(pizzaMenuen.getPizzaMenu().get(j).getNavn() + "\n");
-=======
-          System.out.println(pizzaMenuen.getPizzaMenu().get(j).getNavn());
->>>>>>> 028631fe3617a3ef5839b76d6a1c709db84d7ea8
+          System.out.println(pizzaMenuen.getPizzaMenu().get(i).getNavn());
         }
       }
     }
   }
+
   public void uploadOrdreListe() {
     File fileWrite = new File("Mario´s Pizzeria/src/Ordreliste.txt");
     PrintStream fileWriter = null;
@@ -66,43 +66,30 @@ public class Bruger {
       e.printStackTrace();
     }
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
+
     for (int i = 0; i < ordreListe.size(); i++) {
-      fileWriter.println("Bestilling nr: " + ordreListe.get(i).toString() + "\nDato og tid: " + ui.visTidspunkt(localDateTime.format(formatter)));
+      ordreNummer++;
+      fileWriter.println("Bestilling nr: " + ordreNummer + "\nPizza nummer: " + ordreListe.get(i).toString() + "\nDato og tid: " + ui.visTidspunkt(localDateTime.format(formatter)));
       fileWriter.println();
 
     }
-<<<<<<< HEAD
-  }
-=======
-<<<<<<< HEAD
-  }
-    public void sletOrdre () {
-      Scanner input = new Scanner(System.in);
-      System.out.println("Enter number of order you want to delete: ");
-      int brugerName = input.nextInt();
-      for (int i = 0; i < ordreListe.size(); i++) {
-        if (ordreListe.get(i).equals(brugerName)) {
-          ordreListe.remove(i);
-        }
-      }
-=======
->>>>>>> 028631fe3617a3ef5839b76d6a1c709db84d7ea8
 
-    public void downloadOrdreListe () {
-      File fileRead = new File("Mario´s Pizzeria/src/Ordreliste.txt");
-      Scanner fileReader = null;
-      try {
-        fileReader = new Scanner(fileRead);
-      } catch (FileNotFoundException e) {
-        e.printStackTrace();
-      }
-      while (fileReader.hasNext()) {
-        System.out.println(fileReader.nextLine());
-      }
   }
 
-<<<<<<< HEAD
-  public void sletOrdre () {
+  public void downloadOrdreListe() {
+    File fileRead = new File("Mario´s Pizzeria/src/Ordreliste.txt");
+    Scanner fileReader = null;
+    try {
+      fileReader = new Scanner(fileRead);
+    } catch (FileNotFoundException e) {
+      e.printStackTrace();
+    }
+    while (fileReader.hasNext()) {
+      System.out.println(fileReader.nextLine());
+    }
+  }
+
+  public void sletOrdre() {
     Scanner input = new Scanner(System.in);
     System.out.println("Enter number of order you want to delete: ");
     int brugerName = input.nextInt();
@@ -110,10 +97,6 @@ public class Bruger {
       if (ordreListe.get(i).equals(brugerName)) {
         ordreListe.remove(i);
       }
-=======
-   */
->>>>>>> ce1b39128681d200572defb401a0671962366de0
->>>>>>> 028631fe3617a3ef5839b76d6a1c709db84d7ea8
     }
   }
 }

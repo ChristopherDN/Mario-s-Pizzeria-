@@ -8,9 +8,5 @@ public class Main {
     //----Metodekald fra anden klasse----
     menu.visMenu();
   }
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 028631fe3617a3ef5839b76d6a1c709db84d7ea8
 }

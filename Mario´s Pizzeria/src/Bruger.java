@@ -6,17 +6,42 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 public class Bruger {
+
+  //----Attributter----
+  DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
   private LocalDateTime localDateTime = LocalDateTime.now().withNano(0);
-  private String midlertidig;
   private ArrayList<Integer> ordreListe = new ArrayList<>();
-  private int ordreNummer;
+  private int bestillingsNummer;
 
+  //----Override konstruktør----
+  public Bruger(){
+  }
 
+  //--Konstruktør----
+  public Bruger(int bestillingsNummer)    {
+    this.bestillingsNummer = bestillingsNummer;
+  }
+
+  //----Getter----
+  public int getBestillingsNummer() {
+    return bestillingsNummer;
+  }
+
+  //----Setter----
+  public void setBestillingsNummer(int bestillingsNummer) {
+    this.bestillingsNummer = bestillingsNummer;
+
+  }
+
+  //----Instantieringer---
   UI ui = new UI();
   PizzaMenu pizzaMenuen = new PizzaMenu();
   Menu menuen = new Menu();
 
+
+  //----Metoder----
   public void hentPizzaMenu() {
     pizzaMenuen.printPizzaMenu();
   }
@@ -39,19 +64,23 @@ public class Bruger {
     while (brugerInput != 0);
   }
 
-  DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
+
 
   public void seOrdreListeMario() {
 
     for (int i = 0; i < ordreListe.size(); i++) {
-      ordreNummer++;
-      System.out.println("\n" + ui.visTidspunkt(localDateTime.format(formatter)) + "\n" + "Bestilling nummer: " + ordreNummer);
+      Bruger bruger = new Bruger(i);
+      //bestillingsNummer++;
+      System.out.println("\n" + ui.visTidspunkt(localDateTime.format(formatter)) + "\n" + "Bestilling nummer: " + bruger.getBestillingsNummer());
+
       System.out.print("Pizza nummer: ");
-      ui.printOrdreListe(ordreListe.get(i));
+
+      ui.printOrdreListe((ordreListe.get(i)));
+
 
       for (int j = 0; j < pizzaMenuen.getPizzaMenu().size(); j++) {
-        if (ordreListe.get(i) == j + 1) {
-          System.out.println(pizzaMenuen.getPizzaMenu().get(i).getNavn());
+        if (ordreListe.get(i) == pizzaMenuen.getPizzaMenu().get(j).getNummer()) {
+          System.out.println("\n" + pizzaMenuen.getPizzaMenu().get(j).getNavn());
         }
       }
     }
@@ -68,12 +97,11 @@ public class Bruger {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
 
     for (int i = 0; i < ordreListe.size(); i++) {
-      ordreNummer++;
-      fileWriter.println("Bestilling nr: " + ordreNummer + "\nPizza nummer: " + ordreListe.get(i).toString() + "\nDato og tid: " + ui.visTidspunkt(localDateTime.format(formatter)));
+      Bruger bruger = new Bruger(i);
+      //bestillingsNummer++;
+      fileWriter.println("Bestilling nummer: " + bruger.getBestillingsNummer() + "\nPizza nummer: " + ordreListe.get(i).toString() + "\nDato og tid: " + ui.visTidspunkt(localDateTime.format(formatter)));
       fileWriter.println();
-
     }
-
   }
 
   public void downloadOrdreListe() {
@@ -90,14 +118,17 @@ public class Bruger {
   }
 
   public void sletOrdre() {
+
     Scanner input = new Scanner(System.in);
-    System.out.println("Enter number of order you want to delete: ");
-    int brugerName = input.nextInt();
+    System.out.println("Indtast bestillingsnummer som du vil slette: ");
+    int sletBestillingsNummer = input.nextInt();
     for (int i = 0; i < ordreListe.size(); i++) {
-      if (ordreListe.get(i).equals(brugerName)) {
+      Bruger bruger = new Bruger(i);
+      if (bruger.getBestillingsNummer() == sletBestillingsNummer) {
         ordreListe.remove(i);
       }
     }
   }
+  
 }
 

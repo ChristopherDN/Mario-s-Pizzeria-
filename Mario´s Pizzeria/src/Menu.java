@@ -58,9 +58,10 @@ public class Menu {
                 "3. Se ordre",
                 "4. Upload ordreliste",
                 "5. Download ordreliste",
+                "6. Slet ordre",
                 "9. Afslut"};
-        Menu menu = new Menu("MARIOS PIZZA:", "Vælg: ", menuChoice);
 
+        Menu menu = new Menu("MARIOS PIZZA:", "\nVælg: \n", menuChoice);
 
         menu.printMenu();
         boolean isRunning;
@@ -84,6 +85,9 @@ public class Menu {
                 case 5:
                     bruger.downloadOrdreListe();
                     break;
+                case 6:
+                    bruger.sletOrdre();
+                    break;
                 case 9:
                     isRunning = false;
                     break;
@@ -96,5 +100,6 @@ public class Menu {
             }
         }
     }
+
 }
 

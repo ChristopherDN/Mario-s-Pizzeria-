@@ -38,7 +38,9 @@ public class Bruger {
     }
     while (brugerInput != 0);
   }
+
   DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
+
   public void seOrdreListeMario() {
     for (int i = 0; i < ordreListe.size(); i++) {
       //System.out.println("\n"+"Tidspunkt: "+localDateTime.format(formatter));
@@ -46,7 +48,7 @@ public class Bruger {
       ui.printOrdreListe(ordreListe.get(i));
 
       for (int j = 0; j < pizzaMenuen.getPizzaMenu().size(); j++) {
-        if(ordreListe.get(i)==j+1){
+        if (ordreListe.get(i) == j + 1) {
           System.out.println(pizzaMenuen.getPizzaMenu().get(j).getNavn());
         }
       }
@@ -74,18 +76,16 @@ public class Bruger {
     while (fileReader.hasNext()) {
       System.out.println(fileReader.nextLine());
     }
-<<<<<<< HEAD
-
-    public void sletOrdre() {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter number of order you want to delete: ");
-        int brugerName = input.nextInt();
-        for (int i = 0; i < ordreListe.size(); i++) {
-            if (ordreListe.get(i).equals(brugerName)) {
-                ordreListe.remove(i);
-            }
-        }
-=======
   }
->>>>>>> 04e33c9362e780645c5e651839e7f6037a7c478f
-}
+    public void sletOrdre () {
+      Scanner input = new Scanner(System.in);
+      System.out.println("Enter number of order you want to delete: ");
+      int brugerName = input.nextInt();
+      for (int i = 0; i < ordreListe.size(); i++) {
+        if (ordreListe.get(i).equals(brugerName)) {
+          ordreListe.remove(i);
+        }
+      }
+    }
+  }
+

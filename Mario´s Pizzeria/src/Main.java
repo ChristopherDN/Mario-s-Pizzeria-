@@ -7,11 +7,5 @@ public class Main {
 
     //----Metodekald fra anden klasse----
     menu.visMenu();
-
   }
-
-  public void run() {
-
-  }
-
 }

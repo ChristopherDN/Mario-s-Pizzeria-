@@ -1,8 +1,8 @@
 public class Pizza {
-  int nummer = 0;
-  String navn = "vesuvio";
-  String fyld = "tomat";
-  int pris = 60;
+  private int nummer;
+  private String navn;
+  private String fyld ;
+  private int pris;
 
   public Pizza(int nummer, String navn, String fyld, int pris) {
     this.nummer = nummer;

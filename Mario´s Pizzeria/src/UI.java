@@ -38,12 +38,12 @@ public class UI {
 
 
   public int printOrdreListe(int s) {
-    getString(s + ": ");
+    System.out.print(s + ": ");
     return s;
   }
 
   public String printIndtastOrdre(String message) {
-    getInt(message);
+    System.out.println(message);
     return message;
 
 

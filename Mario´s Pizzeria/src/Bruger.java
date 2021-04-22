@@ -1,6 +1,5 @@
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.PrintStream;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -21,10 +20,9 @@ public class Bruger {
     pizzaMenuen.printPizzaMenu();
   }
 
-  public void opretOrdreAlfonso() throws NumberFormatException {
+  public void opretOrdreAlfonso()  {
     Scanner input = new Scanner(System.in);
     ui.printIndtastOrdre("Indtast ordrenummer, afslut med 0: ");
-
     int brugerInput = input.nextInt();
 
     do {
@@ -40,20 +38,20 @@ public class Bruger {
     while (brugerInput != 0);
   }
   DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
+
   public void seOrdreListeMario() {
     for (int i = 0; i < ordreListe.size(); i++) {
-      //System.out.println("\n"+"Tidspunkt: "+localDateTime.format(formatter));
+
       System.out.println(ui.visTidspunkt(localDateTime.format(formatter)));
       ui.printOrdreListe(ordreListe.get(i));
 
       for (int j = 0; j < pizzaMenuen.getPizzaMenu().size(); j++) {
-        if(ordreListe.get(i)==j+1){
-          System.out.println(pizzaMenuen.getPizzaMenu().get(j).getNavn());
+        if (ordreListe.get(i) == j + 1) {
+          System.out.println(pizzaMenuen.getPizzaMenu().get(j).getNavn() + "\n");
         }
       }
     }
   }
-
   public void uploadOrdreListe() {
     File fileWrite = new File("Mario´s Pizzeria/src/Ordreliste.txt");
     PrintStream fileWriter = null;
@@ -66,31 +64,32 @@ public class Bruger {
     for (int i = 0; i < ordreListe.size(); i++) {
       fileWriter.println("Bestilling nr: " + ordreListe.get(i).toString() + "\nDato og tid: " + ui.visTidspunkt(localDateTime.format(formatter)));
       fileWriter.println();
+
     }
   }
 
-  public void downloadOrdreListe() throws FileNotFoundException {
-    File fileRead = new File("Mario´s Pizzeria/src/Ordreliste.txt");
-    Scanner fileReader = new Scanner(fileRead);
-    while (fileReader.hasNext()) {
-      System.out.println(fileReader.nextLine());
-    }
+    public void downloadOrdreListe () {
+      File fileRead = new File("Mario´s Pizzeria/src/Ordreliste.txt");
+      Scanner fileReader = null;
+      try {
+        fileReader = new Scanner(fileRead);
+      } catch (FileNotFoundException e) {
+        e.printStackTrace();
+      }
+      while (fileReader.hasNext()) {
+        System.out.println(fileReader.nextLine());
+      }
+  }
 
-  /*
-
-       // public void sletOrdre () {
-     // Scanner input = new Scanner(System.in);
-      //System.out.println("Enter number of order you want to delete: ");
-      //int brugerName = input.nextInt();
-      //for (int i = 0; i < ordreListe.size(); i++) {
-       // if (ordreListe.get(i).equals(brugerName)) {
-         // ordreListe.remove(i);
-        //}
-      //}
-    //}
-
-
-   */
+  public void sletOrdre () {
+    Scanner input = new Scanner(System.in);
+    System.out.println("Enter number of order you want to delete: ");
+    int brugerName = input.nextInt();
+    for (int i = 0; i < ordreListe.size(); i++) {
+      if (ordreListe.get(i).equals(brugerName)) {
+        ordreListe.remove(i);
+      }
     }
   }
+}
 

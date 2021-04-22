@@ -1,12 +1,16 @@
 Bestilling nummer: 0
 Pizza nummer: 4
-Dato og tid: 22-04-2021 14:05
+Dato og tid: 22-04-2021 14:20
 
 Bestilling nummer: 1
 Pizza nummer: 7
-Dato og tid: 22-04-2021 14:05
+Dato og tid: 22-04-2021 14:20
 
 Bestilling nummer: 2
 Pizza nummer: 13
-Dato og tid: 22-04-2021 14:05
+Dato og tid: 22-04-2021 14:20
+
+Bestilling nummer: 3
+Pizza nummer: 27
+Dato og tid: 22-04-2021 14:20
 

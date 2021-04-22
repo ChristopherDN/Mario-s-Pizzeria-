@@ -6,6 +6,7 @@ public class PizzaMenu {
   private ArrayList<Pizza> pizzaMenu = new ArrayList();
 
   //----Konstruktør med arrayliste der bliver initialiseret med objekter som bliver initialiserede----
+  //----Lavet af Christopher----
   public PizzaMenu() {
     pizzaMenu.add(new Pizza(1, "DELLA NONNA      ", "tomat, ost, semi-dry tomat, rucola og parmesanost ",80));
     pizzaMenu.add(new Pizza(2, "QUATTRO FORMAGGI ", "tomat, fire forskellige oste                      ",92));
@@ -47,6 +48,7 @@ public class PizzaMenu {
   }
 
   //----Metode----
+  //----Lavet af Christopher----
   public void printPizzaMenu() {
     for (int i = 0; i < pizzaMenu.size(); i++) {
       System.out.println(pizzaMenu.get(i));

@@ -19,7 +19,9 @@ public class Bruger {
   public Bruger(){
   }
 
+
   //--Konstruktør----
+
   public Bruger(int bestillingsNummer)    {
     this.bestillingsNummer = bestillingsNummer;
   }
@@ -46,6 +48,7 @@ public class Bruger {
     pizzaMenuen.printPizzaMenu();
   }
 
+  //----Lavet af Younes----
   public void opretOrdreAlfonso() {
     Scanner input = new Scanner(System.in);
     ui.printIndtastOrdre("Indtast ordrenummer, afslut med 0: ");
@@ -65,7 +68,7 @@ public class Bruger {
   }
 
 
-
+  //----Lavet af Younes----
   public void seOrdreListeMario() {
 
     for (int i = 0; i < ordreListe.size(); i++) {
@@ -86,6 +89,7 @@ public class Bruger {
     }
   }
 
+  //----Lavet af Younes----
   public void uploadOrdreListe() {
     File fileWrite = new File("Mario´s Pizzeria/src/Ordreliste.txt");
     PrintStream fileWriter = null;
@@ -104,6 +108,7 @@ public class Bruger {
     }
   }
 
+  //----Lavet af Younes----
   public void downloadOrdreListe() {
     File fileRead = new File("Mario´s Pizzeria/src/Ordreliste.txt");
     Scanner fileReader = null;
@@ -117,6 +122,7 @@ public class Bruger {
     }
   }
 
+  //--Lavet af Younes----
   public void sletOrdre() {
 
     Scanner input = new Scanner(System.in);

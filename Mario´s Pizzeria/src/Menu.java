@@ -26,6 +26,7 @@ public class Menu {
 
 
     //----Metoder----
+    //----Lavet af Anna----
     public void printMenu() {
         String printString = menuOverskrift + "\n";
         for (int i = 0; i < pizzaMenu.length; i++)
@@ -33,6 +34,7 @@ public class Menu {
         System.out.println("\n" + printString);
     }
 
+    //----Lavet af Anna----
     public int readChoice() {
         Scanner scanner = new Scanner(System.in);
         boolean validChoice = false;
@@ -50,6 +52,7 @@ public class Menu {
         return choice;
     }
 
+    //----Lavet af Anna----
     public void visMenu() throws FileNotFoundException {
         Bruger bruger = new Bruger();
 

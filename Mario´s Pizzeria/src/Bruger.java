@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -76,6 +77,7 @@ public class Bruger {
     while (fileReader.hasNext()) {
       System.out.println(fileReader.nextLine());
     }
+<<<<<<< HEAD
   }
     public void sletOrdre () {
       Scanner input = new Scanner(System.in);
@@ -86,6 +88,24 @@ public class Bruger {
           ordreListe.remove(i);
         }
       }
+=======
+
+  /*
+
+       // public void sletOrdre () {
+     // Scanner input = new Scanner(System.in);
+      //System.out.println("Enter number of order you want to delete: ");
+      //int brugerName = input.nextInt();
+      //for (int i = 0; i < ordreListe.size(); i++) {
+       // if (ordreListe.get(i).equals(brugerName)) {
+         // ordreListe.remove(i);
+        //}
+      //}
+    //}
+
+
+   */
+>>>>>>> ce1b39128681d200572defb401a0671962366de0
     }
   }
 

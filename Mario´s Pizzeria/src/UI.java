@@ -13,19 +13,19 @@ public class UI {
     Bruger bruger = new Bruger();
   }
 
-  //Get string
+  //-------------------Get string-------------------
   public String getString(String message) {
     System.out.println(message);
     return scan.nextLine();
   }
 
-  //Get int
+  //-------------------Get int---------------------
   public int getInt(String message) {
-    System.out.println(message);
+    getString(message);
     return intValidate();
   }
 
-  // Int validering
+  //--------------Int validering-------------------
   public int intValidate() {
     while (!scan.hasNextInt()) {
       getString("Fejl, indtast et tal: ");
@@ -38,12 +38,12 @@ public class UI {
 
 
   public int printOrdreListe(int s) {
-    System.out.print(s + ": ");
+    getString(s + ": ");
     return s;
   }
 
   public String printIndtastOrdre(String message) {
-    System.out.println(message);
+    getInt(message);
     return message;
 
 

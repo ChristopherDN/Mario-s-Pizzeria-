@@ -7,6 +7,7 @@ public class Menu {
     private String menuOverskrift;
     private String brugerValg;
     private String[] pizzaMenu;
+    final UI ui = new UI();
 
     //----Konstruktør----
     public Menu(String menuOverskrift, String brugerValg, String[] pizzaMenu) {
@@ -42,6 +43,7 @@ public class Menu {
                 choice = scanner.nextInt();
                 validChoice = true;
             } else {
+                ui.getInt("Fejl, indtast et tal fra menuen");
                 scanner.nextLine();
             }
         }
@@ -49,7 +51,6 @@ public class Menu {
     }
 
     public void visMenu() throws FileNotFoundException {
-        UI ui = new UI();
         Bruger bruger = new Bruger();
 
         String[] menuChoice = {"1. Se Pizza Menu",
@@ -87,7 +88,7 @@ public class Menu {
                     isRunning = false;
                     break;
                 default:
-                    System.out.println("\nFejl.\nDet indtastede er ugyldigt ");
+                    ui.getString("\nFejl.\nDet indtastede er ugyldigt ");
             }
             for (int i = 0; i < pizzaMenuen.getPizzaMenu().size(); i++) {
 

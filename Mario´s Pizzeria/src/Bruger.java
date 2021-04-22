@@ -37,6 +37,7 @@ public class Bruger {
     }
     while (brugerInput != 0);
   }
+
   DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
 
   public void seOrdreListeMario() {
@@ -47,7 +48,11 @@ public class Bruger {
 
       for (int j = 0; j < pizzaMenuen.getPizzaMenu().size(); j++) {
         if (ordreListe.get(i) == j + 1) {
+<<<<<<< HEAD
           System.out.println(pizzaMenuen.getPizzaMenu().get(j).getNavn() + "\n");
+=======
+          System.out.println(pizzaMenuen.getPizzaMenu().get(j).getNavn());
+>>>>>>> 028631fe3617a3ef5839b76d6a1c709db84d7ea8
         }
       }
     }
@@ -66,7 +71,22 @@ public class Bruger {
       fileWriter.println();
 
     }
+<<<<<<< HEAD
   }
+=======
+<<<<<<< HEAD
+  }
+    public void sletOrdre () {
+      Scanner input = new Scanner(System.in);
+      System.out.println("Enter number of order you want to delete: ");
+      int brugerName = input.nextInt();
+      for (int i = 0; i < ordreListe.size(); i++) {
+        if (ordreListe.get(i).equals(brugerName)) {
+          ordreListe.remove(i);
+        }
+      }
+=======
+>>>>>>> 028631fe3617a3ef5839b76d6a1c709db84d7ea8
 
     public void downloadOrdreListe () {
       File fileRead = new File("Mario´s Pizzeria/src/Ordreliste.txt");
@@ -81,6 +101,7 @@ public class Bruger {
       }
   }
 
+<<<<<<< HEAD
   public void sletOrdre () {
     Scanner input = new Scanner(System.in);
     System.out.println("Enter number of order you want to delete: ");
@@ -89,6 +110,10 @@ public class Bruger {
       if (ordreListe.get(i).equals(brugerName)) {
         ordreListe.remove(i);
       }
+=======
+   */
+>>>>>>> ce1b39128681d200572defb401a0671962366de0
+>>>>>>> 028631fe3617a3ef5839b76d6a1c709db84d7ea8
     }
   }
 }

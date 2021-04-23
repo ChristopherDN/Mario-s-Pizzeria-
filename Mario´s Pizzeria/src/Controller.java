@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 
-public class Bruger {
+public class Controller {
 
   //----Attributter----
   DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
@@ -16,13 +16,11 @@ public class Bruger {
   private int bestillingsNummer;
 
   //----Override konstruktør----
-  public Bruger(){
+  public Controller(){
   }
 
-
   //--Konstruktør----
-
-  public Bruger(int bestillingsNummer)    {
+  public Controller(int bestillingsNummer)    {
     this.bestillingsNummer = bestillingsNummer;
   }
 
@@ -34,7 +32,6 @@ public class Bruger {
   //----Setter----
   public void setBestillingsNummer(int bestillingsNummer) {
     this.bestillingsNummer = bestillingsNummer;
-
   }
 
   //----Instantieringer---
@@ -72,11 +69,12 @@ public class Bruger {
   public void seOrdreListeMario() {
 
     for (int i = 0; i < ordreListe.size(); i++) {
-      Bruger bruger = new Bruger(i);
+      Controller controller = new Controller(i);
       //bestillingsNummer++;
-      System.out.println("\n" + ui.visTidspunkt(localDateTime.format(formatter)) + "\n" + "Bestilling nummer: " + bruger.getBestillingsNummer());
+      System.out.println("\n" + ui.visTidspunkt(localDateTime.format(formatter)) + "\n" + "Bestilling nummer: "
+              + controller.getBestillingsNummer());
 
-      System.out.print("Pizza nummer: ");
+      System.out.println("Pizza nummer: ");
 
       ui.printOrdreListe((ordreListe.get(i)));
 
@@ -101,9 +99,9 @@ public class Bruger {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
 
     for (int i = 0; i < ordreListe.size(); i++) {
-      Bruger bruger = new Bruger(i);
+      Controller controller = new Controller(i);
       //bestillingsNummer++;
-      fileWriter.println("Bestilling nummer: " + bruger.getBestillingsNummer() + "\nPizza nummer: " + ordreListe.get(i).toString() + "\nDato og tid: " + ui.visTidspunkt(localDateTime.format(formatter)));
+      fileWriter.println("Bestilling nummer: " + controller.getBestillingsNummer() + "\nPizza nummer: " + ordreListe.get(i).toString() + "\nDato og tid: " + ui.visTidspunkt(localDateTime.format(formatter)));
       fileWriter.println();
     }
   }
@@ -129,8 +127,8 @@ public class Bruger {
     System.out.println("Indtast bestillingsnummer som du vil slette: ");
     int sletBestillingsNummer = input.nextInt();
     for (int i = 0; i < ordreListe.size(); i++) {
-      Bruger bruger = new Bruger(i);
-      if (bruger.getBestillingsNummer() == sletBestillingsNummer) {
+      Controller controller = new Controller(i);
+      if (controller.getBestillingsNummer() == sletBestillingsNummer) {
         ordreListe.remove(i);
       }
     }

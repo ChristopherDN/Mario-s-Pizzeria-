@@ -25,7 +25,7 @@ public class UI {
 
   //----Lavet af Anna----
   public void printPizzaMenu(PizzaMenu pizzaMenu) {
-    Bruger bruger = new Bruger();
+    Controller controller = new Controller();
   }
 
   //----Lavet af Anna----

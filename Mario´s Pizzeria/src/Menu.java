@@ -56,7 +56,7 @@ public class Menu {
 
     //----Lavet af Anna-Christopher---
     public void visMenu() throws FileNotFoundException {
-        Bruger bruger = new Bruger();
+        Controller controller = new Controller();
 
         String[] menuChoice = {"1. Se Pizza Menu",
                 "2. Opret ordre",
@@ -79,19 +79,19 @@ public class Menu {
                     pizzaMenuen.printPizzaMenu();
                     break;
                 case 2:
-                    bruger.opretOrdreAlfonso();
+                    controller.opretOrdreAlfonso();
                     break;
                 case 3:
-                    bruger.seOrdreListeMario();
+                    controller.seOrdreListeMario();
                     break;
                 case 4:
-                    bruger.uploadOrdreListe();
+                    controller.uploadOrdreListe();
                     break;
                 case 5:
-                    bruger.downloadOrdreListe();
+                    controller.downloadOrdreListe();
                     break;
                 case 6:
-                    bruger.sletOrdre();
+                    controller.sletOrdre();
                     break;
                 case 9:
                     isRunning = false;

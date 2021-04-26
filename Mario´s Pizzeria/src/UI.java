@@ -8,7 +8,6 @@ public class UI {
   //---Lavet af Christopher------
   private final Scanner scan = new Scanner(System.in);
   private LocalDateTime localDateTime = LocalDateTime.now();
-  private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
 
   //----Metoder----
   //----Lavet af Anna----
@@ -25,7 +24,7 @@ public class UI {
 
   //----Lavet af Anna----
   public void printPizzaMenu(PizzaMenu pizzaMenu) {
-    Bruger bruger = new Bruger();
+    Kasseapparat kasseapparat = new Kasseapparat();
   }
 
   //----Lavet af Anna----
@@ -38,6 +37,16 @@ public class UI {
 
     return nextNumber;
   }
+
+//printer en String i kasseapperatet
+  public void printString(String besked){
+    System.out.println(besked);
+  }
+  //printer en int
+  public void printInt(int tal){
+    System.out.println(tal);
+  }
+
 
   //----Lavet af Anna----
   public int printOrdreListe(int s) {
@@ -52,14 +61,14 @@ public class UI {
   }
 
   //----Lavet af Anna----
-  public String ugyldigtPizzaNummer(String message) {
-    getString(message);
-    return message;
+  public String ugyldigtPizzaNummer(String besked) {
+    getString(besked);
+    return besked;
   }
 
   //----Lavet af Anna----
-  public String visTidspunkt(String localDateTime) {
-    return localDateTime;
+  public void visTidspunkt(LocalDateTime localDateTime) {
+    System.out.println(localDateTime);
   }
 
 }

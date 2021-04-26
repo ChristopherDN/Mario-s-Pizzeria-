@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da271a03-97d6-4f7b-9223-c82f913f1705" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Mario´s Pizzeria.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GitRepos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Kasseapparat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mario´s Pizzeria.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Mario´s Pizzeria.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mario´s Pizzeria/Bruger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mario´s Pizzeria/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mario´s Pizzeria/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mario´s Pizzeria/Ordreliste.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mario´s Pizzeria/Ordreliste.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mario´s Pizzeria/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mario´s Pizzeria/UI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bruger.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ordreliste.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ordreliste.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PizzaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PizzaMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI.java" afterDir="false" />
+    </list>
+    <list id="795c0dc3-e774-41bb-afde-858d67f47151" name="Changes by ralle" comment="">
       <change beforePath="$PROJECT_DIR$/src/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +25,35 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/UI.java">
+      <ranges>
+        <range start1="10" end1="11" start2="10" end2="10" changelist="da271a03-97d6-4f7b-9223-c82f913f1705" />
+        <range start1="27" end1="28" start2="26" end2="27" changelist="da271a03-97d6-4f7b-9223-c82f913f1705" />
+        <range start1="41" end1="41" start2="40" end2="50" changelist="795c0dc3-e774-41bb-afde-858d67f47151" />
+        <range start1="54" end1="57" start2="63" end2="66" changelist="da271a03-97d6-4f7b-9223-c82f913f1705" />
+        <range start1="60" end1="62" start2="69" end2="71" changelist="da271a03-97d6-4f7b-9223-c82f913f1705" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="1rXGZP1CPEBc0Kxn5kJu1eykrGZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -28,16 +63,32 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/test" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -47,13 +98,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -72,11 +125,59 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619115077081</updated>
-      <workItem from="1619115079060" duration="1831000" />
+      <workItem from="1619115079060" duration="9635000" />
+      <workItem from="1619262713766" duration="16463000" />
+      <workItem from="1619280181800" duration="12561000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Kasseapparat.java</url>
+          <line>65</line>
+          <properties class="Kasseapparat" method="uploadOrdreListe">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Kasseapparat.java</url>
+          <line>93</line>
+          <properties class="Kasseapparat" method="downloadOrdreFil">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Kasseapparat.java</url>
+          <line>113</line>
+          <properties class="Kasseapparat" method="sletOrdre">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Kasseapparat" memberName="menuen" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

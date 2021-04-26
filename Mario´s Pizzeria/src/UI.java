@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class UI {
 
   //----Attributter----
-  //---Lavet af Christopher------
+  //---Lavet af Christopher og Anna------
   private final Scanner scan = new Scanner(System.in);
   private LocalDateTime localDateTime = LocalDateTime.now();
 
@@ -51,7 +51,7 @@ public class UI {
     return message;
   }
 
-  //----Lavet af Anna----
+ /* //----Lavet af Anna----
   public String ugyldigtPizzaNummer(String besked) {
     getString(besked);
     return besked;
@@ -60,6 +60,6 @@ public class UI {
   //----Lavet af Anna----
   public void visTidspunkt(LocalDateTime localDateTime) {
     System.out.println(localDateTime);
-  }
+  } */
 
 }

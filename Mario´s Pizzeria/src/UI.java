@@ -15,18 +15,15 @@ public class UI {
     System.out.println(message);
     return scan.nextLine();
   }
-
+  //printer en String i kasseapperatet
+  public void printString(String besked){
+    System.out.println(besked);
+  }
   //----Lavet af Anna----
   public int getInt(String message) {
     getString(message);
     return intValidate();
   }
-
-  //----Lavet af Anna----
-  public void printPizzaMenu(PizzaMenu pizzaMenu) {
-    Kasseapparat kasseapparat = new Kasseapparat();
-  }
-
   //----Lavet af Anna----
   public int intValidate() {
     while (!scan.hasNextInt()) {
@@ -38,23 +35,17 @@ public class UI {
     return nextNumber;
   }
 
-//printer en String i kasseapperatet
-  public void printString(String besked){
-    System.out.println(besked);
-  }
-  //printer en int
-  public void printInt(int tal){
-    System.out.println(tal);
-  }
-
-
   //----Lavet af Anna----
   public int printOrdreListe(int s) {
     System.out.print(s + ": ");
     return s;
   }
-
   //----Lavet af Anna----
+  public void printPizzaMenu(PizzaMenu pizzaMenu) {
+    Kasseapparat kasseapparat = new Kasseapparat();
+  }
+  //----Lavet af Anna----
+  
   public String printIndtastOrdre(String message) {
     System.out.println(message);
     return message;

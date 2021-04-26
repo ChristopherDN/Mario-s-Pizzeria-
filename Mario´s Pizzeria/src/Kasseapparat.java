@@ -114,7 +114,7 @@ public class Kasseapparat {
   public void sletOrdre() {
 
     Scanner input = new Scanner(System.in);
-    System.out.println("Indtast bestillingsnummer som du vil slette: ");
+    ui.getString("Indtast bestillingsnummer som du vil slette: ");
 
     int sletBestillingsNummer = input.nextInt();
     for (int i = 0; i < filListe.size(); i++) {

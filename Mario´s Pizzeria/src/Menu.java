@@ -32,7 +32,7 @@ public class Menu {
     String printString = menuOverskrift + "\n";
     for (int i = 0; i < pizzaMenu.length; i++)
       printString += pizzaMenu[i] + "\n";
-    System.out.println("\n" + printString);
+    ui.getString("\n" + printString);
   }
 
   //----Lavet af Anna-Christopher---
@@ -89,7 +89,7 @@ public class Menu {
           isRunning = false;
           break;
         default:
-          ui.getString("\nFejl.\nDet indtastede er ugyldigt ");
+          ui.getInt("\nFejl.\nDet indtastede er ugyldigt ");
       }
       for (int i = 0; i < pizzaMenuen.getPizzaMenu().size(); i++) {
 

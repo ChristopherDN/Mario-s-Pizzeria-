@@ -2,9 +2,7 @@ Mario´s Pizza
 
 GitHub repo size GitHub contributors GitHub stars GitHub forks Twitter Follow
 
-Project name is a <Pizza ordering system> that allows <Mario> to do <to manage pizza orders>.
-
-Additional line of information text about what the project does. Your introduction should be around 2 or 3 sentences. Don't go overboard, people won't read it.
+Project is a <Pizza ordering system> that allows <Mario> to do <to manage pizza orders>.
 
 Prerequisites
 
@@ -26,12 +24,10 @@ Using <project_name>
 
 To use <project_name>, follow these steps:
 
-<usage_example>
-Add run commands and examples you think users will find useful. Provide an options reference for bonus points!
 
-Contributing to <to manage pizza orders>
+Contributing to <Mario´s Pizza>
 
-To contribute to <to manage pizza orders, follow these steps:
+To contribute to <tMario´s Pizza>, follow these steps:
 
 Fork this repository.
 Create a branch: git checkout -b <branch_name>.
